@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+
+:root {
+  --purple-500: hsl(259, 100%, 65%);
+  --red-400: hsl(0, 100%, 67%);
+  --white: hsl(0, 100%, 100%);
+  --grey-100: hsl(0, 0%, 94%);
+  --grey-200: hsl(0, 0%, 86%);
+  --grey-400: hsl(0, 0%, 45%);
+  --grey-500: hsl(0, 1%, 44%);
+  --black: hsl(0, 0%, 0%);
+
+  --font-size-input: 3rem;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+
+  --font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--grey-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+main {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 30px;
+  border-radius: 20px 20px 160px 20px;
+  max-width: 800px;
+  font-family: var(--font-family);
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 33%;
+}
+
+.dates label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--grey-400);
+  font-weight: var(--font-weight-700);
+}
+
+.dates input {
+  width: 90%;
+  padding: 10px 15px;
+  border: 1px solid var(--grey-200);
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-700);
+  font-family: var(--font-family);
+  border-radius: 5px;
+}
+
+.dates input:focus {
+  outline: none;
+  border: 1px solid var(--purple-500);
+}
+
+.error {
+  color: var(--red-400);
+  font-style: italic;
+  font-size: 10px;
+}
+
+main img {
+  background-color: var(--purple-500);
+  width: 80px;
+  border-radius: 50%;
+  padding: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+main img:hover,
+main img:active {
+  background-color: var(--black);
+}
+
+.icon-hr {
+  position: relative;
+}
+
+hr {
+  border: 1px solid var(--grey-100);
+}
+
+.result p {
+  font-size: var(--font-size-input);
+  color: var(--black);
+  font-style: italic;
+  font-weight: var(--font-weight-800);
+  line-height: 1;
+  text-align: left;
+}
+
+.result p span {
+  color: var(--purple-500);
+}
+
+@media (min-width: 768px) {
+  main img {
+    left: 95%;
+    top: 50%;
+  }
+
+  .result p {
+    font-size: 5rem;
+  }
+
+  .dates input {
+    font-size: 1.8rem;
+  }
+}
