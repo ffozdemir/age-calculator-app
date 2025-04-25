@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Link to solution repository](https://github.com/your-username/age-calculator-app)
-- Live Site URL: [Link to live site](https://your-username.github.io/age-calculator-app/)
+- Solution URL: [Link to solution repository](https://github.com/ffozdemir/age-calculator-app)
+- Live Site URL: [Link to live site](https://voluble-centaur-2f9ab8.netlify.app)
 
 ## My process
 
